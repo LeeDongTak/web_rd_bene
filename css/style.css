@@ -1,0 +1,34 @@
+a{
+    color:inherit;
+    text-decoration:none;
+  }
+  /* 라이브러리 */
+  .row::after{
+    clear:both;
+    display:block;
+    content:"";
+  }
+  .cell{
+    float:left;
+  }
+  
+  .cell-right{
+    float:right;
+  }
+  
+  .con{
+    max-width:1440px;
+  } 
+  /* 스타일 */
+ .header{
+   width: 100%;
+   height: auto;   
+ }
+ .header > .nav_contanter{
+   width: 1200px;
+   height: 90px;
+   margin: 0 auto;
+ }
+ .header > .nav_contanter > .logo_box{
+   margin-top: 12px;
+ }
