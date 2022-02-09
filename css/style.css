@@ -258,6 +258,7 @@ a{
  .menu_wrap > .content_box{
    width: 100%;
    height: auto;
+   overflow: hidden;
  }
  .menu_wrap > .content_box .menu_box{
    margin: 70px;
