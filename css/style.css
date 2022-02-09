@@ -2,6 +2,10 @@ a{
     color:inherit;
     text-decoration:none;
   }
+  a:hover{
+    color:inherit;
+    text-decoration:none;
+  }
   /* 라이브러리 */
   .row::after{
     clear:both;
@@ -20,15 +24,211 @@ a{
     max-width:1440px;
   } 
   /* 스타일 */
+ /* 1차매뉴 시작 */
  .header{
+   position: fixed;
    width: 100%;
-   height: auto;   
+   height: auto;
+   z-index: 99;
  }
- .header > .nav_contanter{
+ .header.active{
+   background: #f2f2f2;
+ }
+ .header > .nav_conteniar{
    width: 1200px;
    height: 90px;
    margin: 0 auto;
  }
- .header > .nav_contanter > .logo_box{
+ .header > .nav_conteniar > .logo_box{
    margin-top: 12px;
  }
+ .header > .nav_conteniar > .logo_box{
+   cursor: pointer;
+ }
+ .header > .nav_conteniar > .nav_box{
+   margin-left: 90px;
+ }
+ .header > .nav_conteniar > .nav_box > ul > li{
+   font-size: 15px;
+   font-weight: bold;
+   margin: 0 30px;
+   line-height: 90px;
+ }
+ .header > .nav_conteniar > .nav_box > ul > li > a{
+   display: inline-block;
+   height: 90px;
+ }
+ .header > .nav_conteniar > .nav_box > ul > li > a::after{
+  content: "";
+  display: block;
+  width: 0%;
+  height: 3px;
+  background:#785E4D;
+  transition: 0.3s;
+  margin: 0 auto;
+ }
+ .header > .nav_conteniar > .nav_box > ul > li > a:hover:after{
+  width: 100%;
+ }
+ .header > .nav_conteniar > .btn_box{
+   width: 110px;
+   height: 90px;
+   line-height: 90px;
+ }
+ .header > .nav_conteniar > .btn_box > a{
+   display: inline-block;
+   width: 110px;
+   height: 30px;
+   font-size: 15px;
+   color:#f2f2f2;
+   background: #785E4D;
+   text-align: center;
+   line-height: 30px;
+   border-radius: 13px;
+ }
+ .header > .nav_conteniar > .btn_box > a:hover{
+  color:#785E4D;
+  background: #f2f2f2;
+  font-weight: bold;
+  border: 1px solid #785E4D;
+ }
+ /* 1차매뉴 끝 */
+ /* 2차매뉴 시작 */
+ .sub_nenu_wrap{
+   position: fixed;
+   top: 90px;
+   width: 100%;
+   height: 0;
+   background: #e2dcdc;
+   z-index: 98;
+   transition: 0.5s;
+ }
+ .sub_nenu_wrap.active{
+  border-top: 1px solid #785E4D;
+  height: 300px;
+ }
+ .sub_nenu_wrap.active > .sub_conteniar{
+   opacity: 1;
+   visibility: visible;
+ }
+ .sub_nenu_wrap > .sub_conteniar{
+   width: 768px;
+   height: 300px;
+   margin: 0 auto;
+   opacity: 0;
+   visibility:hidden;
+   transition-delay: 0.1s;
+   text-align: center;
+ }
+ .sub_nenu_wrap > .sub_conteniar > ul:nth-child(1){
+   margin:22px 39px;
+ }
+ .sub_nenu_wrap > .sub_conteniar > ul:nth-child(2){
+  margin:22px 24px;
+ }
+ .sub_nenu_wrap > .sub_conteniar > ul:nth-child(3){
+  margin:22px 50px;
+ }
+ .sub_nenu_wrap > .sub_conteniar > ul:nth-child(4){
+  margin:22px 33px;
+ }
+ .sub_nenu_wrap > .sub_conteniar > ul:nth-child(5){
+  margin:22px 16px;
+ }
+ .sub_nenu_wrap > .sub_conteniar > ul:nth-child(6){
+  margin:22px 31px;
+ }
+ .sub_nenu_wrap > .sub_conteniar > ul > li{
+  margin:8px 0;
+ }
+ .sub_nenu_wrap > .sub_conteniar > ul > li > a{
+   font-size: 12px;
+ }
+ .sub_nenu_wrap > .sub_conteniar > ul > li > a::after{
+   content: "";
+   display: block;
+   width: 0%;
+   height: 2px;
+   transition: 0.3s;
+   background: #785E4D;
+   margin: 0 auto;
+ }
+ .sub_nenu_wrap > .sub_conteniar > ul > li > a:hover:after{
+   width: 100%;
+ }
+ .sub_nenu_wrap > .sub_conteniar > ul > li > a:hover{
+   font-weight: bold;
+ }
+ /* 2차매뉴 끝 */
+ /* 배너 슬리아드 시작 */
+ .benner{
+   position: relative;
+   width: 100%;
+   height: auto;
+ }
+ .benner_wrap{
+   width: 100%;
+   height: 820px;
+   overflow: hidden;
+ }
+ /* 도트버튼 */
+ .benner_wrap .slick-dots{
+   bottom: 10px;
+   margin: 0;
+ }
+ .benner_wrap .slick-dots li.slick-active button:before{
+   color: #785E4D;
+ }
+ /*  */
+ .benner_wrap .benner_box{
+   width: 100%;
+   height: 820px;
+ }
+ .benner_wrap .benner_box > a{
+   display: inline-block;
+   width: 100%;
+   height: 820px;
+ }
+ .benner_wrap .benner_1{
+   background: url(../img/22년_딸기_신메뉴.jpg) no-repeat top center ;
+ }
+ .benner_wrap .benner_2{
+   background: url(../img/2022년_설_선물세트.jpg) no-repeat top center ;
+ }
+ .benner_wrap .benner_3{
+   background: url(../img/창업설명회_홈페이지.jpg) no-repeat top center ;
+ }
+ .benner_wrap .benner_4{
+   background: url(../img/겨울_신메뉴.jpg) no-repeat top center ;
+ }
+/* 좌우 넘김버튼 */
+.benner > .prev_btn{
+  position: absolute;
+  top: 50%;
+  left: 120px;
+  z-index: 98;
+  width: 19px;
+  height: 38px;
+  cursor: pointer;
+}
+.benner > .next_btn{
+  position: absolute;
+  top: 50%;
+  right: 120px;
+  z-index: 98;
+  width: 19px;
+  height: 38px;
+  cursor: pointer;
+}
+.benner > .btn:hover > svg path{
+  fill: #000;
+}
+/*  */
+ /* 배너 슬리아드 끝 */
+ /* 메뉴 슬라이드 시작 */
+ .menu_wrap{
+   width: 100%;
+   height: 500px;
+   background: #c00;
+ }
+ /* 메뉴 슬라이드 끝 */

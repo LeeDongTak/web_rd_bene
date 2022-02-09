@@ -127,9 +127,9 @@ body>#wrap { width: 100%; height: auto; min-height: 100%;  }
   
 /* NOTO SANS end */
 
-body { font: 0.8em/1.4 "나눔 고딕", "Nanum Gothic", "돋움", Dotum, Sans-Serief; color: #555; }
-.lang-en, :lang(en) { font: 12px/1.4 "Helvetica Neue", Helvetica, Verdana, Arial, Sans-Serief; }
-table, input, textarea, select, button{  font: 1em/1.4 "나눔 고딕", "Nanum Gothic", "돋움", Dotum, Sans-Serief; color: #555;  }
+body { font: 0.8em/1.4 "Noto Sans KR"; color: #785E4D ; background-color: #F2F2F2;}
+.lang-en, :lang(en) { font: 12px/1.4 "Noto Sans KR"; }
+table, input, textarea, select, button{  font: 1em/1.4 "Noto Sans KR"; color: #785E4D;  }
 
 /* HTML5 새 요소 초기화 */
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
@@ -146,8 +146,8 @@ fieldset { border:0; }
 legend  { display:none; }
 input, select{ vertical-align:middle; }
 h1, h2, h3, h4, h5, h6	{ font-size:1em; }
-a:link, a:visited { color:#666; text-decoration:none;}
-a:hover, a:active { color:#444; text-decoration:underline;}
+a:link, a:visited { color:#785E4D; text-decoration:none;}
+a:hover, a:active { color:#785E4D; text-decoration:underline;}
 a:active, a:focus { outline: 0;}
 hr { display:none; height:0; } 
 
