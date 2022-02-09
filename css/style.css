@@ -228,7 +228,59 @@ a{
  /* 메뉴 슬라이드 시작 */
  .menu_wrap{
    width: 100%;
-   height: 500px;
-   background: #c00;
+   height: auto;
+ }
+ .menu_wrap > .nav_box{
+   position: relative;
+   width: 1200px;
+   height: 98px;
+   margin: 70px auto;
+   padding-top: 50px;
+   text-align: center;
+   font-size: 72px;
+ }
+ .menu_wrap > .nav_box > .prev_btn{
+   position: absolute;
+   bottom: 42px;
+   left: 0;
+   width: 27px;
+   height: 54px;
+   cursor: pointer;
+ }
+ .menu_wrap > .nav_box > .next_btn{
+  position: absolute;
+  bottom: 42px;
+  right: 0;
+   width: 27px;
+   height: 54px;
+   cursor: pointer;
+ }
+ .menu_wrap > .content_box{
+   width: 100%;
+   height: auto;
+ }
+ .menu_wrap > .content_box .menu_box{
+   margin: 70px;
+   padding: 30px;
+ }
+ .menu_wrap > .content_box .menu_box:hover{
+   background: #fff;
+   box-shadow: 5px 5px 10px #ccc;
+   
+ }
+ .menu_wrap > .content_box .menu_box > a{
+   display: inline-block;
+   width: 100%;
+   height: 100%;
+ }
+ .menu_wrap > .content_box .menu_box > a > img{
+   width: 300px;
+   height: 300px;
+ }
+ .menu_wrap > .content_box .menu_box > a > p{
+   text-align: center;
+   font-size: 24px;
+   margin-top: 45px;
+   font-weight: bold;
  }
  /* 메뉴 슬라이드 끝 */

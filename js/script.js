@@ -26,6 +26,23 @@ $(document).ready(function(){
         nextArrow: $(".next_btn"), 
         initialSlide:0,
     });
+    // 슬릭슬라이더 (메뉴 슬라이드)
+    $(".menu_wrap > .content_box").slick({
+        autoplay: true,
+        autoplaySpeed: 3000 ,
+        arrows: true , 
+        dots: false ,
+        centerrMode: true,
+        pauseOnHover: true ,
+        slidesToScroll: 1, 
+        slidesToShow: 5,
+        infinite:true,
+        swipe:  true ,
+        speed: 1000 ,
+        prevArrow: $(".prev_btn"),
+        nextArrow: $(".next_btn"), 
+        initialSlide:0,
+    });
     // 슬라이드가 넘어가면 번호가 바뀌는 이벤트(클릭 동일)
     // setInterval(function(){
     //     var newsNum = $(".news > .slider").slick('slickCurrentSlide');  
