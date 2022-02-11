@@ -261,8 +261,8 @@ a{
    overflow: hidden;
  }
  .menu_wrap > .content_box .menu_box{
-   margin: 46px;
-   padding: 30px 0;
+   margin: 41px;
+   padding-bottom: 30px;
  }
  .menu_wrap > .content_box .menu_box:hover{
    background: #fff;
@@ -286,3 +286,353 @@ a{
    font-weight: bold;
  }
  /* 메뉴 슬라이드 끝 */
+ /* 인테리어 보기 시작 */
+ .content_wrap{
+   width: 100%;
+   height: auto;
+   margin: 250px 0;
+ }
+ .content_wrap > .content_box{
+   width: 1200px;
+   height: 400px;
+   margin: 0 auto;
+ }
+ .content_wrap > .content_box > .img_box{
+   width: 50%;
+ }
+ .content_1_wrap > .content_box > .img_box,
+ .content_3_wrap > .content_box > .img_box{
+    text-align: right;
+ }
+ .content_wrap > .content_box > .img_box > img{
+   height: 400px;
+ }
+ .content_wrap > .content_box > .text_box{
+   width: 50%;
+   text-align: center;
+ }
+ .content_wrap > .content_box > .text_box > .text_1{
+   font-size: 48px;
+   margin-top: 65px;
+ }
+ .content_wrap > .content_box > .text_box > .text_2{
+   font-size: 23px;
+   margin-top: 48px;
+ }
+ .content_wrap > .content_box > .text_box > .btn{
+    margin-top: 58px;
+ }
+ .content_wrap > .content_box > .text_box > .btn > a{
+   font-size: 15px;
+   padding:7px 20px;
+   border: 1px solid #785E4D;
+   border-radius: 100px;
+ }
+ .content_wrap > .content_box > .text_box > .btn > a:hover{
+   color: #f2f2f2;
+   background: #785E4D;
+   font-weight: bold;
+ }
+ .content_4_wrap > .content_box > .text_box > .text_1{
+   margin-top: 115px;
+ }
+ .content_4_wrap > .content_box > .text_box > .btn{
+   margin-top: 78px;
+ }
+ /* 인테리어 보기 끝 */
+ /* hello again 시작 */
+ .hello_again_wrap{
+   width: 100%;
+   height: 1530px;
+ }
+ .hello_again_wrap > .hello_again_box{
+   position: relative;
+   width: 1200px;
+   height: 1530px;
+   margin: 0 auto;
+ }
+ /* 배너 이벤트 시작 */
+  .hello_again_wrap > .hello_again_box > .ha_wrap{
+    overflow: hidden;
+  }
+  .hello_again_wrap > .hello_again_box > .ha_wrap > .ha_ent_box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    background: #000;
+    text-align: center;
+  }
+  .hello_again_wrap > .hello_again_box > .ha_wrap.active > .ha_ent_box{
+    opacity: 70%;
+    visibility:visible;
+  }
+  .hello_again_wrap > .hello_again_box > .ha_wrap > .ha_ent_box > a{
+    display: none;
+    width: 130px;
+    height: auto;
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+    margin:70% auto;
+  }
+  .hello_again_wrap > .hello_again_box > .ha_wrap.active > .ha_ent_box > a{
+    display: block;
+  }
+  .hello_again_wrap > .hello_again_box > .ha_wrap.active > .ha_ent_box > a:hover{
+    color: #f74511;
+  }
+  .hello_again_wrap > .hello_again_box > .ha_wrap > img{
+    width: 100%;
+    transition: 0.3s;
+  }
+  .hello_again_wrap > .hello_again_box > .ha_wrap.active > img{
+    width: 200%;
+    margin: -55%;
+  }
+  /* 배너 이벤트 끝 */
+ /* 배너1 사직*/
+  .hello_again_wrap > .hello_again_box > .ha_1_wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 242px;
+  }
+  /* 배너1 끝*/
+ /* 배너2 사직*/
+  .hello_again_wrap > .hello_again_box > .ha_2_wrap{
+    position: absolute;
+    top: 242px;
+    left: 0;
+    width:300px;
+    height: 476px;
+    background: #fff;
+  }
+  .hello_again_wrap > .hello_again_box > .ha_2_wrap > img{
+    display: block;
+    width: 118px;
+    margin: 100px auto 30px auto;
+  }
+  .hello_again_wrap > .hello_again_box > .ha_2_wrap > p{
+    text-align: center;
+  }
+  /* 배너2 끝*/
+ /* 배너3 사직*/
+  .hello_again_wrap > .hello_again_box > .ha_3_wrap{
+    position: absolute;
+    top: 242px;
+    left: 300px;
+    width: 300px;
+    height: 476px;
+  }
+  /* 배너3 끝*/
+ /* 배너4 사직*/
+  .hello_again_wrap > .hello_again_box > .ha_4_wrap{
+    position: absolute;
+    top: 718px;
+    left: 0;
+    width: 600px;
+    height: 812px;
+  }
+  /* 배너4 끝*/
+ /* 배너5 사직*/
+  .hello_again_wrap > .hello_again_box > .ha_5_wrap{
+    position: absolute;
+    top: 0;
+    left: 600px;
+    width: 600px;
+    height: 628px;
+  }
+  .hello_again_wrap > .hello_again_box > .ha_5_wrap > img{
+    width: 600px;
+  }
+  /* 배너5 끝*/
+ /* 배너6 사직*/
+  .hello_again_wrap > .hello_again_box > .ha_6_wrap{
+    position: absolute;
+    top: 628px;
+    left: 600px;
+    width: 340px;
+    height: 729px;
+  }
+  .hello_again_wrap > .hello_again_box > .ha_6_wrap > img{
+    width: 340px;
+  }
+  .hello_again_wrap > .hello_again_box > .ha_6_wrap.active > .ha_ent_box > a{
+    margin:100% auto;
+  }
+  /* 배너6 끝*/
+ /* 배너7 사직*/
+  .hello_again_wrap > .hello_again_box > .ha_7_wrap{
+    position: absolute;
+    top: 628px;
+    left: 940px;
+    width: 260px;
+    height: 476px;
+  }
+  /* 배너7 끝*/
+  /* 배너8,9 이벤트 사직*/
+  .hello_again_wrap > .hello_again_box > .ha_wrap_2{
+    overflow: hidden;
+  }
+  .hello_again_wrap > .hello_again_box > .ha_wrap_2 > .text_box{
+    width: 173px;
+    height: 173px;
+    background: #D5BBB4;
+    text-align: center;
+  }
+  .hello_again_wrap > .hello_again_box > .ha_wrap_2 > .text_box > a{
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 173px;
+  }
+  .hello_again_wrap > .hello_again_box > .ha_wrap_2 > .text_box > a:hover{
+    color: #f74511;
+  }
+  .hello_again_wrap > .hello_again_box > .ha_wrap_2 > img{
+    width: 173px;
+  }
+  .hello_again_wrap > .hello_again_box > .ha_wrap_2.active > .text_box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 70%;
+    transition: 0.5s;
+  }
+  .hello_again_wrap > .hello_again_box > .ha_wrap_2.active > .text_box > a{
+    font-size: 20px;
+  }
+  .hello_again_wrap > .hello_again_box > .ha_wrap_2.active > img{
+    width: 100%;
+    height: 200%;
+    transition: 0.5s;
+  }
+  /* 배너8,9 이벤트 끝*/
+  /* 배너8 사직*/
+  .hello_again_wrap > .hello_again_box > .ha_8_wrap{
+    position: absolute;
+    top: 1357px;
+    left: 249px;
+    width: 346px;
+    height: 173px;
+  }
+  /* 배너8 끝*/
+  /* 배너9 사직*/
+  .hello_again_wrap > .hello_again_box > .ha_9_wrap{
+    position: absolute;
+    top: 1357px;
+    left: 595px;
+    width: 346px;
+    height: 173px;
+  }
+  /* 배너9 끝*/
+  /* 배너10 사직*/
+  .hello_again_wrap > .hello_again_box > .ha_10_wrap{
+    position: absolute;
+    top: 1105px;
+    right: 0;
+    width: 260px;
+    height: 425px;
+    transition: 0.5s;
+    overflow: hidden;
+  }
+  .hello_again_wrap > .hello_again_box > .ha_10_wrap > img{
+    position: absolute;
+    width: 260px;
+    z-index: 89;
+  }
+  .hello_again_wrap > .hello_again_box > .ha_10_wrap > .text_box{
+    position: absolute;
+    top: 300px;
+    width: 260px;
+    height: 125px;
+    background: #838DAB;
+    text-align: center;
+    transition: 0.5s;
+  }
+  .hello_again_wrap > .hello_again_box > .ha_10_wrap > .text_box > a{
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 140px;
+  }
+  .hello_again_wrap > .hello_again_box > .ha_10_wrap > .text_box > a:hover{
+    color: #f74511;
+  }
+  /* 배너10 끝 */
+  /* 배너10 이벤트 시작*/
+  .hello_again_wrap > .hello_again_box > .ha_10_wrap.active > .text_box{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 70%;
+    z-index: 90;
+  }
+  .hello_again_wrap > .hello_again_box > .ha_10_wrap.active > .text_box > a{
+    line-height: 440px;
+    font-size: 20px;
+  }
+  .hello_again_wrap > .hello_again_box > .ha_10_wrap.active > img{
+    left: -50%;
+    width: 200%;
+    height: 100%;
+    transition: 0.5s;
+  }
+  /* 배너10 이벤트 끝 */
+ /* hello again 끝 */
+ /* footer 시작 */
+ .footer_wrap{
+   width: 100%;
+   height: auto;
+ }
+ .footer_wrap > .footer_fa{
+   width: 100%;
+   height: 100px;
+   border-bottom: 2px solid #785E4D;
+ }
+ .footer_wrap > .footer_la{
+   width: 100%;
+   height: 158px;
+ }
+ .footer_wrap > .footer > .footer_box{
+   width: 1200px;
+   height: auto;
+   margin: 0 auto;
+ }
+ .footer_wrap > .footer_fa > .footer_box > p{
+   margin: 57px 35px 0px 0px;
+ }
+ .footer_wrap > .footer_fa > .footer_box > p > a{
+   font-size: 17px;
+   font-weight: bold;
+ }
+ .footer_wrap > .footer_fa > .footer_box > p > a:hover{
+   color: #f74511;
+ }
+ .footer_wrap > .footer_la > .footer_box > .text_box{
+   margin-top: 46px;
+ }
+ .footer_wrap > .footer_la > .footer_box > .text_box > div{
+   font-size: 11px;
+   font-weight: bold;
+ }
+ .footer_wrap > .footer_la > .footer_box > .text_box > div > p{
+   margin:0 0 2px 25px;
+ }
+ .footer_wrap > .footer_la > .footer_box > .text_box > div:nth-child(3){
+   font-weight: lighter;
+   margin-top: 25px;
+ }
+ .footer_wrap > .footer_la > .footer_box > .logo_box{
+   margin-top: 53px;
+ }
+ /* footer 끝 */

@@ -43,6 +43,34 @@ $(document).ready(function(){
         nextArrow: $(".next_btn"), 
         initialSlide:0,
     });
+
+    // hello-again 마우스 이벤트
+    $(".hello_again_wrap > .hello_again_box > .ha_wrap").mouseenter(function(){
+        $(this).addClass("active");
+    });
+    $(".hello_again_wrap > .hello_again_box > .ha_wrap").mouseleave(function(){
+        $(this).removeClass("active");
+    });
+    $(".hello_again_wrap > .hello_again_box > .ha_wrap_2").mouseenter(function(){
+        $(this).addClass("active");
+    });
+    $(".hello_again_wrap > .hello_again_box > .ha_wrap_2").mouseleave(function(){
+        $(this).removeClass("active");
+    });
+    $(".hello_again_wrap > .hello_again_box > .ha_10_wrap").mouseenter(function(){
+        $(this).addClass("active");
+    });
+    $(".hello_again_wrap > .hello_again_box > .ha_10_wrap").mouseleave(function(){
+        $(this).removeClass("active");
+    });
+
+
+
+
+
+
+
+
     // 슬라이드가 넘어가면 번호가 바뀌는 이벤트(클릭 동일)
     // setInterval(function(){
     //     var newsNum = $(".news > .slider").slick('slickCurrentSlide');  
