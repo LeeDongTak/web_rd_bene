@@ -22,8 +22,8 @@ $(document).ready(function(){
         infinite:true,
         swipe:  true ,
         speed: 1000 ,
-        prevArrow: $(".prev_btn"),
-        nextArrow: $(".next_btn"), 
+        prevArrow: $(".ben_prev_btn"),
+        nextArrow: $(".ben_next_btn"), 
         initialSlide:0,
     });
     // 슬릭슬라이더 (메뉴 슬라이드)

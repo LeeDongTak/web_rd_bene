@@ -30,6 +30,7 @@ a{
    width: 100%;
    height: auto;
    z-index: 99;
+   transition: 0.3s;
  }
  .header.active{
    background: #f2f2f2;
@@ -164,12 +165,19 @@ a{
  .top_btn{
    position: fixed;
    bottom: 55px;
-   right: 13  0px;
+   right: 130px;
    width: 27px;
    height: 15px;
    z-index: 99;
+   opacity: 0;
+   visibility: hidden;
    transition: 0.3s;
+   cursor: pointer;
    background: url(../img/ico-arr-top.png) no-repeat 0 0;
+ }
+ .top_btn.active{
+   opacity: 1;
+   visibility: visible;
  }
  .top_btn:hover{
    background: url(../img/ico-arr-top_hv.png) no-repeat 0 0;
@@ -310,7 +318,7 @@ a{
    background: url(../img/겨울_신메뉴.jpg) no-repeat top center ;
  }
 /* 좌우 넘김버튼 */
-.benner > .prev_btn{
+.benner > .ben_prev_btn{
   position: absolute;
   top: 50%;
   left: 120px;
@@ -319,7 +327,7 @@ a{
   height: 38px;
   cursor: pointer;
 }
-.benner > .next_btn{
+.benner > .ben_next_btn{
   position: absolute;
   top: 50%;
   right: 120px;
