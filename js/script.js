@@ -35,7 +35,7 @@ $(document).ready(function(){
         centerrMode: true,
         pauseOnHover: true ,
         slidesToScroll: 1, 
-        slidesToShow: 5,
+        slidesToShow: 4,
         infinite:true,
         swipe:  true ,
         speed: 1000 ,
@@ -44,6 +44,12 @@ $(document).ready(function(){
         initialSlide:0,
     });
 
+    // 고정버튼 클릭 이벤트
+    $(".sns_wrap > .close_btn").click(function(){
+        // $(".sns_wrap > .fb_btn").animate({right:"300px"},600);
+        //$(".sns_wrap").css({'height':'210px'});
+        $(".sns_wrap").toggleClass("active");
+    });
     // hello-again 마우스 이벤트
     $(".hello_again_wrap > .hello_again_box > .ha_wrap").mouseenter(function(){
         $(this).addClass("active");

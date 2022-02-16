@@ -34,11 +34,11 @@
 
 
 
-    <script>
-    	$(document).ready(function() {
-        	$('.link').smoothScroll(300);
-      	});
-   	</script>
+	<script>
+		$(function() {
+			$('.link').smoothScroll(300);
+		  });
+   </script>
 
 	<!--[if lte IE 9]>
 	<script src="./js/lib/IE9.js">IE7_PNG_SUFFIX=".png";</script> 
@@ -70,7 +70,7 @@
 <body>
 <div id="wrap">
 	<!-- 1차매뉴 시작 -->
-	<div class="header">
+	<div class="header link">
 		<div class="nav_conteniar row">
 			<div class="logo_box cell">
 				<img src="./img/logo.png" alt="">
@@ -147,6 +147,16 @@
 		</div>
 	</div>
 	<!-- 2차매뉴 끝 -->
+	<!-- 고정버튼 시작 -->
+	<div class="top_btn"></div>
+	<div class="sns_wrap">
+		<div class="sns_btn close_btn"></div>
+		<div class="sns_btn fb_btn"><p><a href="#"></a></p></div>
+		<div class="sns_btn insta_btn"><p><a href="#"></a></p></div>
+		<div class="sns_btn youtub_btn"><p><a href="#"></a></p></div>
+		<div class="sns_btn app_btn"><p><a href="#"></a></p></div>
+	</div>
+	<!-- 고정버튼 끝 -->
 	<!-- 베너슬라이드 시작 -->
 	<div class="benner">
 		<div class="benner_wrap">
@@ -185,6 +195,64 @@
 		</div>
 	</div>
 	<!-- 베너슬라이드 끝 -->
+	<!-- 컨텐츠 보기 시작 -->
+	<div class="content_1_wrap content_wrap">
+		<div class="content_box row">
+			<div class="img_box cell-right">
+				<img src="./img/내가 오픈하고 싶은 카페.jpg" alt="">
+			</div>
+			<div class="text_box cell-right">
+				<p class="text_1">내가 오픈하고 싶은 카페</p>
+				<p class="text_2">
+					동네와 공간, 저마다의<br/>
+					특별함과 다양함은 모두 다르니까요
+				</p>
+				<p class="btn"><a href="#">인테리어 보기</a></p>
+			</div>
+		</div>
+	</div>
+	<div class="content_2_wrap content_wrap">
+		<div class="content_box row">
+			<div class="img_box cell">
+				<img src="./img/가맹 개설 안내.jpg" alt="">
+			</div>
+			<div class="text_box cell">
+				<p class="text_1">가맹 개설 안내</p>
+				<p class="text_2">
+					가맹점 개설을 위한 절차를<br/>
+					자세하게 안내드립니다
+				</p>
+				<p class="btn"><a href="#">개설 절차 보기</a></p>
+			</div>
+		</div>
+	</div>
+	<div class="content_3_wrap content_wrap">
+		<div class="content_box row">
+			<div class="img_box cell-right">
+				<img src="./img/베네 운영 꿀팁.jpg" alt="">
+			</div>
+			<div class="text_box cell-right">
+				<p class="text_1">내가 오픈하고 싶은 카페</p>
+				<p class="text_2">
+					카페베네 점주님들을 위한<br/>
+					실용 만점 운영 꿀팁 모음
+				</p>
+				<p class="btn"><a href="#">매장꿀팁 보기</a></p>
+			</div>
+		</div>
+	</div>
+	<div class="content_4_wrap content_wrap">
+		<div class="content_box row">
+			<div class="img_box cell">
+				<img src="./img/20211111337551.jpg" alt="">
+			</div>
+			<div class="text_box cell">
+				<p class="text_1">RENEWAL / 덕소역점</p>
+				<p class="btn"><a href="#">매장 보기</a></p>
+			</div>
+		</div>
+	</div>
+	<!-- 컨텐츠 보기 끝 -->
 	<!-- 메뉴 슬라이드 시작 -->
 	<div class="menu_wrap">
 		<div class="nav_box">
@@ -257,64 +325,6 @@
 		</div>
 	</div>
 	<!-- 메뉴 슬라이드 끝 -->
-	<!-- 컨텐츠 보기 시작 -->
-	<div class="content_1_wrap content_wrap">
-		<div class="content_box row">
-			<div class="img_box cell-right">
-				<img src="./img/내가 오픈하고 싶은 카페.jpg" alt="">
-			</div>
-			<div class="text_box cell-right">
-				<p class="text_1">내가 오픈하고 싶은 카페</p>
-				<p class="text_2">
-					동네와 공간, 저마다의<br/>
-					특별함과 다양함은 모두 다르니까요
-				</p>
-				<p class="btn"><a href="#">인테리어 보기</a></p>
-			</div>
-		</div>
-	</div>
-	<div class="content_2_wrap content_wrap">
-		<div class="content_box row">
-			<div class="img_box cell">
-				<img src="./img/가맹 개설 안내.jpg" alt="">
-			</div>
-			<div class="text_box cell">
-				<p class="text_1">가맹 개설 안내</p>
-				<p class="text_2">
-					가맹점 개설을 위한 절차를<br/>
-					자세하게 안내드립니다
-				</p>
-				<p class="btn"><a href="#">개설 절차 보기</a></p>
-			</div>
-		</div>
-	</div>
-	<div class="content_3_wrap content_wrap">
-		<div class="content_box row">
-			<div class="img_box cell-right">
-				<img src="./img/베네 운영 꿀팁.jpg" alt="">
-			</div>
-			<div class="text_box cell-right">
-				<p class="text_1">내가 오픈하고 싶은 카페</p>
-				<p class="text_2">
-					카페베네 점주님들을 위한<br/>
-					실용 만점 운영 꿀팁 모음
-				</p>
-				<p class="btn"><a href="#">매장꿀팁 보기</a></p>
-			</div>
-		</div>
-	</div>
-	<div class="content_4_wrap content_wrap">
-		<div class="content_box row">
-			<div class="img_box cell">
-				<img src="./img/20211111337551.jpg" alt="">
-			</div>
-			<div class="text_box cell">
-				<p class="text_1">RENEWAL / 덕소역점</p>
-				<p class="btn"><a href="#">매장 보기</a></p>
-			</div>
-		</div>
-	</div>
-	<!-- 컨텐츠 보기 끝 -->
 	<!-- hello again 시작 -->
 	<div class="hello_again_wrap">
 		<div class="hello_again_box">

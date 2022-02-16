@@ -160,11 +160,119 @@ a{
    font-weight: bold;
  }
  /* 2차매뉴 끝 */
+ /* sns 버튼 시작 */
+ .top_btn{
+   position: fixed;
+   bottom: 55px;
+   right: 13  0px;
+   width: 27px;
+   height: 15px;
+   z-index: 99;
+   transition: 0.3s;
+   background: url(../img/ico-arr-top.png) no-repeat 0 0;
+ }
+ .top_btn:hover{
+   background: url(../img/ico-arr-top_hv.png) no-repeat 0 0;
+ }
+ .sns_wrap{
+   position: fixed;
+   bottom: 40px;
+   right: 70px;
+   width: 32px;
+   height: 42px;
+   z-index: 99;
+   transition: 0.3s;
+ }
+ .sns_wrap.active{
+  height: 210px;
+ }
+ .sns_wrap > .sns_btn{
+   position: absolute;
+   top: 0;
+   width: 32px;
+   height: 32px;
+   margin-bottom: 10px;
+ }
+ .sns_wrap > .sns_btn > p{
+   position: absolute;
+   top: 42px;
+   width: 100%;
+   height: 100%;
+   transition: 0.3s;
+   opacity: 0;
+   visibility: hidden;
+   transition: 0.3s;
+ }
+ .sns_wrap.active > .sns_btn > p{
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+ }
+ .sns_wrap.active > .close_btn{
+   top: 0;
+ }
+ .sns_wrap.active > .fb_btn{
+   top: 42px;
+ }
+ .sns_wrap.active > .insta_btn{
+   top: 84px;
+ }
+ .sns_wrap.active > .youtub_btn{
+   top: 126px;
+ }
+ .sns_wrap.active > .app_btn{
+   top: 168px;
+ }
+ .sns_wrap > .close_btn{
+   cursor: pointer;
+   z-index: 99;
+   background: url(../img/ico-sns.png) no-repeat 0 0;
+ }
+ .sns_wrap > .close_btn:hover{
+   background: url(../img/ico-sns_hv.png) no-repeat 0 0;
+ }
+ .sns_wrap.active > .close_btn{
+   background: url(../img/ico-close.png) no-repeat 0 0;
+ }
+ .sns_wrap.active > .close_btn:hover{
+   background: url(../img/ico-close_hv.png) no-repeat 0 0;
+ }
+ .sns_wrap > .fb_btn > p{
+   background: url(../img/ico-fb.png) no-repeat 0 0;
+ }
+ .sns_wrap > .fb_btn > p:hover{
+   background: url(../img/ico-fb_hv.png) no-repeat 0 0;
+ }
+ .sns_wrap > .insta_btn > p{
+   background: url(../img/aside-insta.png) no-repeat 0 0;
+ }
+ .sns_wrap > .insta_btn > p:hover{
+   background: url(../img/aside-insta_hv.png) no-repeat 0 0;
+ }
+ .sns_wrap > .youtub_btn > p{
+   background: url(../img/ico-youtub.png) no-repeat 0 0;
+ }
+ .sns_wrap > .youtub_btn > p:hover{
+   background: url(../img/ico-youtub_hv.png) no-repeat 0 0;
+ }
+ .sns_wrap > .app_btn > p{
+   background: url(../img/ico-app.png) no-repeat 0 0;
+ }
+ .sns_wrap > .app_btn > p:hover{
+   background: url(../img/ico-app_hv.png  ) no-repeat 0 0;
+ }
+ .sns_btn > .sns_btn > p > a{
+   display: inline-block;
+   width: 100%;
+   height: 100%;
+ }
+ /* sns 버튼 끝 */
  /* 배너 슬리아드 시작 */
  .benner{
    position: relative;
    width: 100%;
    height: auto;
+   z-index: 97;
  }
  .benner_wrap{
    width: 100%;
@@ -225,67 +333,6 @@ a{
 }
 /*  */
  /* 배너 슬리아드 끝 */
- /* 메뉴 슬라이드 시작 */
- .menu_wrap{
-   width: 100%;
-   height: auto;
- }
- .menu_wrap > .nav_box{
-   position: relative;
-   width: 1200px;
-   height: 98px;
-   margin: 70px auto;
-   padding-top: 50px;
-   text-align: center;
-   font-size: 72px;
- }
- .menu_wrap > .nav_box > .prev_btn{
-   position: absolute;
-   bottom: 42px;
-   left: 0;
-   width: 27px;
-   height: 54px;
-   cursor: pointer;
- }
- .menu_wrap > .nav_box > .next_btn{
-  position: absolute;
-  bottom: 42px;
-  right: 0;
-   width: 27px;
-   height: 54px;
-   cursor: pointer;
- }
- .menu_wrap > .content_box{
-   width: 100%;
-   height: auto;
-   overflow: hidden;
- }
- .menu_wrap > .content_box .menu_box{
-   margin: 41px;
-   padding-bottom: 30px;
- }
- .menu_wrap > .content_box .menu_box:hover{
-   background: #fff;
-   box-shadow: 5px 5px 10px #ccc;
-   
- }
- .menu_wrap > .content_box .menu_box > a{
-   display: inline-block;
-   width: 100%;
-   height: 100%;
- }
- .menu_wrap > .content_box .menu_box > a > img{
-   width: 300px;
-   height: 300px;
-   margin: 0 auto;
- }
- .menu_wrap > .content_box .menu_box > a > p{
-   text-align: center;
-   font-size: 24px;
-   margin-top: 45px;
-   font-weight: bold;
- }
- /* 메뉴 슬라이드 끝 */
  /* 인테리어 보기 시작 */
  .content_wrap{
    width: 100%;
@@ -340,6 +387,73 @@ a{
    margin-top: 78px;
  }
  /* 인테리어 보기 끝 */
+ /* 메뉴 슬라이드 시작 */
+ .menu_wrap{
+  width: 100%;
+  height: auto;
+  margin-bottom: 110px;
+}
+.menu_wrap > .nav_box{
+  position: relative;
+  width: 1200px;
+  height: 98px;
+  margin: 0 auto;
+}
+.menu_wrap > .nav_box > .tltle_box{
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 72px;
+}
+.menu_wrap > .nav_box > .prev_btn{
+  position: absolute;
+  bottom: 18px;
+  right: 100px;
+  width: 27px;
+  height: 54px;
+  cursor: pointer;
+}
+.menu_wrap > .nav_box > .next_btn{
+ position: absolute;
+  bottom: 18px;
+  right: 0;
+  width: 27px;
+  height: 54px;
+  cursor: pointer;
+}
+.menu_wrap > .content_box{
+  width: 1300px;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.menu_wrap > .content_box .menu_box{
+  margin: 41px;
+  padding-top: 18px;
+  padding-bottom: 30px;
+}
+.menu_wrap > .content_box .menu_box:hover{
+  background: #fff;
+  box-shadow: 5px 5px 10px #ccc;
+  
+}
+.menu_wrap > .content_box .menu_box > a{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.menu_wrap > .content_box .menu_box > a > img{
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+.menu_wrap > .content_box .menu_box > a > p{
+  text-align: center;
+  font-size: 18px;
+  margin-top: 33px;
+  font-weight: bold;
+}
+/* 메뉴 슬라이드 끝 */
  /* hello again 시작 */
  .hello_again_wrap{
    width: 100%;

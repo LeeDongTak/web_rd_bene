@@ -3,17 +3,17 @@
 $(document).ready(function(){
    $(window).scroll(function () {
     if ($(this).scrollTop() > 10) { 
-        $('#header').stop().css("display","none");
+        $('.header').stop().css("display","none");
 		$('#nav_box').fadeIn(600);
     } else {
 
 
-		$('#header').stop().delay(300).fadeIn(300);
+		$('.header').stop().delay(300).fadeIn(300);
         $('#nav_box').fadeOut(600);		
     }
    });
 
-   $('#back-top').click(function () {
+   $('.top_btn').click(function () {
     $('body,html').animate({
          scrollTop: 0
     }, 600);
@@ -25,16 +25,16 @@ $(document).ready(function(){
 $(document).ready(function(){
    $(window).scroll(function () {
     if ($(this).scrollBottom() > 10) { 
-        $('#back-top').fadeIn(600);
+        $('.top_btn').fadeIn(600);
 		$('#nav_box').fadeIn(600);		 
     } else {
-        $('#back-top').fadeOut(600);
+        $('.top_btn').fadeOut(600);
         $('#nav_box').fadeOut(600);		
     }
    });
 
 
-   $('#back-top').click(function () {
+   $('.top_btn').click(function () {
     $('body,html').animate({
          scrollTop: 0
     }, 600);
