@@ -20,13 +20,17 @@
 	<script src="./js/lib/jquery.easing.1.3.js" type="text/javascript" charset="utf-8"></script>
 	<script src="./js/lib/jquery.backstretch.min.js" type="text/javascript" charset="utf-8"></script>
 
-	<!-- 슬릭슬라이드 -->
 
+	<!-- 슬릭슬라이드 -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
 
 	
+	<!-- aos 불러오기 -->
+	<script src="./aos/aos.js"></script>
+	<link rel="stylesheet" href="./aos/aos.css">
+
 	<!-- my js -->
 	<script src="./js/btlink.js"  type="text/javascript" charset="utf-8"></script>
 	<script src="./js/toTop.js" type="text/javascript" charset="utf-8"></script>
@@ -147,6 +151,74 @@
 		</div>
 	</div>
 	<!-- 2차매뉴 끝 -->
+	<!-- 반응형 메뉴 시작 -->
+	<div class="nobile_wrap">
+		<!-- 매뉴버튼 시작 -->
+		<div class="hamburg_wrap">
+			<div class="hamburg_box">
+				<div class="hamburg">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+		<!-- 매뉴버튼 끝 -->
+		<!-- 메뉴 시작 -->
+		<div class="logo_box">
+			<a href="#">
+				<img src="./img/logo.png" alt="">
+			</a>
+		</div>
+		<div class="menu_box">
+			<ul><p>CAFFEBENE</p>
+				<li><a href="#">CAFFEBENE</a></li>
+				<li><a href="#">브랜드 스토리</a></li>
+				<li><a href="#">베네캣 스토리</a></li>
+				<li><a href="#">카페베네 원두</a></li>
+				<li><a href="#">카페베네 소식</a></li>
+				<li><a href="#">매거진</a></li>
+			</ul>
+			<ul><p>MENU</p>
+				<li><a href="#">MENU</a></li>
+				<li><a href="#">신메뉴</a></li>
+				<li><a href="#">커피</a></li>
+				<li><a href="#">음료</a></li>
+				<li><a href="#">푸드</a></li>
+				<li><a href="#">MD상품</a></li>
+				<li><a href="#">Retail</a></li>
+			</ul>
+			<ul><p>STORE</p>
+				<li><a href="#">STORE</a></li>
+				<li><a href="#">국내</a></li>
+				<li><a href="#">해외</a></li>
+			</ul>
+			<ul><p>MEMBERSHIP</p>
+				<li><a href="#">MEMBERSHIP</a></li>
+				<li><a href="#">등급&혜택</a></li>
+				<li><a href="#">가입방법안내</a></li>
+				<li><a href="#">서비스</a></li>
+				<li><a href="#">FAQ</a></li>
+			</ul>
+			<ul><p>GLOBAL</p>
+				<li><a href="#">GLOBAL</a></li>
+				<li><a href="#">해외매장안내</a></li>
+				<li><a href="#">해외사업소개</a></li>
+				<li><a href="#">해외가맹&유통문의</a></li>
+			</ul>
+			<ul><p>CONTENTS</p>
+				<li><a href="#">CONTENTS</a></li>
+				<li><a href="#">커피</a></li>
+				<li><a href="#">우리동네</a></li>
+				<li><a href="#">사람들</a></li>
+				<li><a href="#">메뉴</a></li>
+				<li><a href="#">이벤트</a></li>
+				<li><a href="#">매장</a></li>
+			</ul>
+		</div>
+		<!-- 메뉴 끝 -->
+	</div>
+	<!-- 반응형 메뉴 끝 -->
 	<!-- 고정버튼 시작 -->
 	<div class="top_btn"></div>
 	<div class="sns_wrap">
@@ -197,7 +269,9 @@
 	<!-- 베너슬라이드 끝 -->
 	<!-- 컨텐츠 보기 시작 -->
 	<div class="content_1_wrap content_wrap">
-		<div class="content_box row">
+		<div class="content_box row"
+		data-aos="fade-left"
+		data-aos-duration="1000">
 			<div class="img_box cell-right">
 				<img src="./img/내가 오픈하고 싶은 카페.jpg" alt="">
 			</div>
@@ -212,7 +286,9 @@
 		</div>
 	</div>
 	<div class="content_2_wrap content_wrap">
-		<div class="content_box row">
+		<div class="content_box row"
+		data-aos="fade-right"
+		data-aos-duration="1000">
 			<div class="img_box cell">
 				<img src="./img/가맹 개설 안내.jpg" alt="">
 			</div>
@@ -227,7 +303,9 @@
 		</div>
 	</div>
 	<div class="content_3_wrap content_wrap">
-		<div class="content_box row">
+		<div class="content_box row"
+		data-aos="fade-left"
+		data-aos-duration="1000">
 			<div class="img_box cell-right">
 				<img src="./img/베네 운영 꿀팁.jpg" alt="">
 			</div>
@@ -242,7 +320,9 @@
 		</div>
 	</div>
 	<div class="content_4_wrap content_wrap">
-		<div class="content_box row">
+		<div class="content_box row"
+		data-aos="fade-right"
+		data-aos-duration="1000">
 			<div class="img_box cell">
 				<img src="./img/20211111337551.jpg" alt="">
 			</div>
@@ -286,37 +366,60 @@
 			</div>
 		</div>
 		<div class="content_box row">
-			<div class="menu_box menu_1_box cell">
+			<div class="menu_box menu_1_box cell"
+			data-aos="slide-up"
+			data-aos-offset="350"
+			data-aos-easing="ease-out-cubic">
 				<a href="#">
 					<img src="./img/생딸기순우유케이크_생딸기주스_생딸기라떼.jpg" alt="">
 					<p>생딸기순우유케이크/<br/>생딸기주스/ 생딸기라떼</p>
 				</a>
 			</div>
-			<div class="menu_box menu_1_box cell">
+			<div class="menu_box menu_2_box cell"
+			data-aos="slide-up"
+			data-aos-delay="150"
+			data-aos-offset="350"
+			data-aos-easing="ease-out-cubic">
 				<a href="#">
 					<img src="./img/생딸기순우유케이크_생딸기주스_생딸기라떼.jpg" alt="">
 					<p>생딸기순우유케이크/<br/>생딸기주스/ 생딸기라떼</p>
 				</a>
 			</div>
-			<div class="menu_box menu_2_box cell">
+			<div class="menu_box menu_3_box cell"
+			data-aos="slide-up"
+			data-aos-delay="250"
+			data-aos-offset="350"
+			data-aos-easing="ease-out-cubic">
 				<a href="#">
 					<img src="./img/딸기쿠키앤크림프라페노_생딸기초콜릿케이크.jpg" alt="">
 					<p>딸기쿠키앤크림프라페노/<br/>생딸기초콜릿케이크</p>
 				</a>
 			</div>
-			<div class="menu_box menu_3_box cell">
+			<div class="menu_box menu_4_box cell"
+			data-aos="slide-up"
+			data-aos-delay="350"
+			data-aos-offset="350"
+			data-aos-easing="ease-out-cubic">
 				<a href="#">
 					<img src="./img/바스크치즈케이크.jpg" alt="">
 					<p>바스크치즈케이크</p>
 				</a>
 			</div>
-			<div class="menu_box menu_4_box cell">
+			<div class="menu_box menu_5_box cell"
+			data-aos="slide-up"
+			data-aos-delay="450"
+			data-aos-offset="350"
+			data-aos-easing="ease-out-cubic">
 				<a href="#">
 					<img src="./img/치즈크림숏라떼 _ 치즈크림플랫화이트.jpg" alt="">
 					<p>치즈크림숏라떼/<br/>치즈크림플랫화이트</p>
 				</a>
 			</div>
-			<div class="menu_box menu_5_box cell">
+			<div class="menu_box menu_6_box cell"
+			data-aos="slide-up"
+			data-aos-delay="550"
+			data-aos-offset="350"
+			data-aos-easing="ease-out-cubic">
 				<a href="#">
 					<img src="./img/로즈뱅쇼 _ 갈릭치즈브레드.jpg" alt="">
 					<p>로즈뱅쇼/ 갈릭치즈브레드</p>
@@ -327,7 +430,9 @@
 	<!-- 메뉴 슬라이드 끝 -->
 	<!-- hello again 시작 -->
 	<div class="hello_again_wrap">
-		<div class="hello_again_box">
+		<div class="hello_again_box"
+		data-aos="fade-up"
+		data-aos-duration="3000">
 			<div class="ha_1_wrap">
 				<img src="./img/배너1.jpg" alt="">
 			</div>

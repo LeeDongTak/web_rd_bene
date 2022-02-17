@@ -23,7 +23,7 @@ $(document).ready(function(){
         swipe:  true ,
         speed: 1000 ,
         prevArrow: $(".ben_prev_btn"),
-        nextArrow: $(".ben_next_btn"), 
+        nextArrow: $(".ben_ next_btn"), 
         initialSlide:0,
     });
     // 슬릭슬라이더 (메뉴 슬라이드)
@@ -114,4 +114,8 @@ $(document).ready(function(){
     //     $(".eco_content").eq(ecoNum+1).addClass("active");
     //     $(".eco_content").eq(ecoNum+1).siblings().removeClass("active");
     // });
-});
+    $(".nobile_wrap > .hamburg_wrap").click(function(){
+        $(".nobile_wrap > .hamburg_wrap").toggleClass("active");
+    });  
+    AOS.init();
+}); 
