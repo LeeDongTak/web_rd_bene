@@ -23,7 +23,7 @@ $(document).ready(function(){
         swipe:  true ,
         speed: 1000 ,
         prevArrow: $(".ben_prev_btn"),
-        nextArrow: $(".ben_ next_btn"), 
+        nextArrow: $(".ben_next_btn"), 
         initialSlide:0,
     });
     // 슬릭슬라이더 (메뉴 슬라이드)
